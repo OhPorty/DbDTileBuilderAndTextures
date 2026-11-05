@@ -15,7 +15,7 @@ You need Blender 5.0 or newer.
 
 1. **Remove any old copy first.** If you installed these add-ons from a zip before, remove them in **Edit → Preferences → Add-ons**. The old copy and the extension can't both be enabled.
 2. **Allow online access.** In **Preferences → System**, turn on **Allow Online Access**. Blender needs it to download the add-ons and check for updates.
-3. **Add this repository.** In **Preferences → Get Extensions**, open **Repositories** (the drop-down at the top right), click **+**, choose **Add Remote Repository** and paste:
+3. **Add this repository.** In **Preferences**, click the **Get Extensions** tab on the left (not Add-ons). At its top right, next to the search box, click **Repositories**. Click the **+** to the right of the list that opens, choose **Add Remote Repository** and paste this into the URL box:
 
    ```
    https://raw.githubusercontent.com/OhPorty/DbDTileBuilderAndTextures/main/index.json
