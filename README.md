@@ -18,7 +18,7 @@ You need Blender 5.0 or newer.
 3. **Add this repository.** In **Preferences → Get Extensions**, open **Repositories** (the drop-down at the top right), click **+**, choose **Add Remote Repository** and paste:
 
    ```
-   https://raw.githubusercontent.com/<you>/<repo>/main/index.json
+   https://raw.githubusercontent.com/OhPorty/DbDTileBuilderAndTextures/main/index.json
    ```
 
 4. **Install.** Search Get Extensions for **DbD** and click **Install** on each add-on you want.
