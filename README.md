@@ -41,23 +41,30 @@ In FModel's **Settings**:
 - Set **Mesh Format** to **ActorX (psk)** or **UEFormat (uemodel)**.
 - Note the **Output Directory**. That's the folder you pick as **Exports Folder** in the add-ons.
 
-### 2. Export these folders in full
+### 2. Export these folders
 
-Right-click each folder in FModel and choose **Export Folder**. Some folders need **both** export types.
+Right-click each folder in FModel and choose **Export Folder**.
 
 | Folder | Properties (.json) | Models | What it's for |
 |---|:---:|:---:|---|
 | `Content/Blueprints` | ✅ | | Every tile, prop setup and gameplay object (pallets, lockers, generators, hooks, windows, totems, chests, hatch) |
-| `Content/Meshes` | ✅ | ✅ | **Both.** Models gives the meshes, materials and textures. Properties gives the blueprints stored in the mesh folders |
+| `Content/Meshes` | | ✅ | The meshes, with their materials and textures |
 | `Content/Data` | ✅ | | The game's data tables: hook and pallet counts, tile rules and realm settings |
 | `Content/ProceduralLevelGeneration` | ✅ | | The full-map layouts |
-| `Plugins/Realms` | ✅ | ✅ | **Both.** The newer realms (see below) |
+| `Plugins/Realms` | | ✅ | The newer realms' meshes (see below) |
 
-#### The tile blueprints alone aren't enough
+### 3. Export the blueprints in the mesh and realm folders
 
-A tile's blueprint is only the outline. The tile places smaller blueprints, like dumpsters, shelves, signs and picnic tables, and many of those **live in the mesh folders**, not under `Content/Blueprints`. There are over 700 of them in `Content/Meshes` alone. If you export `Content/Meshes` only as Models, you get the meshes but not those blueprints, and parts of every tile go missing.
+A tile's blueprint is only the outline. The tile places smaller blueprints, like dumpsters, shelves, signs and picnic tables, and many of those **live in the mesh folders**, not under `Content/Blueprints`. The newer realms keep their blueprints in `Plugins/Realms`. Exporting those folders as Models doesn't include their blueprints.
 
-Don't rely on FModel's search for `BP_` either. Several core gameplay blueprints aren't named `BP_`, such as `GeneratorStandard`, `ClosetStandard` (lockers) and `WindowStandard` (vaults), so a search misses them. Export the whole folders.
+To get them without exporting every mesh as JSON:
+
+1. In FModel, press **Ctrl+Shift+F** to open the search.
+2. Search for `BP_`.
+3. Press **Ctrl+A** to select every result.
+4. Export them as **Properties (.json)**.
+
+Do this as well as exporting `Content/Blueprints`, not instead of it. Several core gameplay blueprints aren't named `BP_`, such as `GeneratorStandard`, `ClosetStandard` (lockers) and `WindowStandard` (vaults), so the search alone misses them.
 
 #### The newer realms are in Plugins
 
@@ -67,11 +74,11 @@ The newer realms, starting with **Liminal**, aren't under `Content` at all. Each
 Plugins/Realms/Realm_26Liminal/Content/...
 ```
 
-If you export only `Content`, those realms build with missing pieces or not at all. Export the whole **`Plugins/Realms`** folder **both** ways, as Properties (.json) and as Models, so every realm's folders come with it, including realms added in future updates.
+If you export only `Content`, those realms build with missing pieces or not at all. Export the whole **`Plugins/Realms`** folder as Models, so every realm's meshes come with it, including realms added in future updates. The `BP_` search in step 3 picks up their blueprints.
 
-### 3. After a game update
+### 4. After a game update
 
-Export the same folders again. Exporting over your old files is fine.
+Export the same folders again, and repeat the `BP_` search. Exporting over your old files is fine.
 
 ---
 

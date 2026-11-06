@@ -7,7 +7,7 @@
       "id": "dbd_material_maker",
       "name": "OhPorty's DbD Material Maker",
       "tagline": "Build DbD materials from FModel material exports",
-      "version": "1.0.2",
+      "version": "1.0.3",
       "type": "add-on",
       "maintainer": "OhPorty",
       "license": [
@@ -21,16 +21,16 @@
         "Material",
         "Import-Export"
       ],
-      "archive_url": "./dbd_material_maker-1.0.2.zip",
-      "archive_size": 44527,
-      "archive_hash": "sha256:797dd0b7a523abf14bb854da330f992cba6e57c3a8bec6f63dc0eee88f961614"
+      "archive_url": "./dbd_material_maker-1.0.3.zip",
+      "archive_size": 44662,
+      "archive_hash": "sha256:dbdb4e082955ad9a14f6b36b50d37fba1b2ce58ff3b14a499a43785e79426e5c"
     },
     {
       "schema_version": "1.0.0",
       "id": "dbd_tile_builder",
       "name": "OhPorty's DbD Blueprint/Tile Builder",
       "tagline": "Rebuild DbD tiles, maps and uMaps from FModel exports",
-      "version": "1.0.2",
+      "version": "1.0.3",
       "type": "add-on",
       "maintainer": "OhPorty",
       "license": [
@@ -44,9 +44,9 @@
         "Import-Export",
         "Object"
       ],
-      "archive_url": "./dbd_tile_builder-1.0.2.zip",
-      "archive_size": 106256,
-      "archive_hash": "sha256:e94730f64ff4e397c8ebbb7b08828568b27c0156ac1b229975bc6873145088d2"
+      "archive_url": "./dbd_tile_builder-1.0.3.zip",
+      "archive_size": 106193,
+      "archive_hash": "sha256:bf7fee93fea6085065e586460937b7cc9b89fa31ae41e9a1b136f79b60767193"
     }
   ]
 }
