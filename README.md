@@ -22,10 +22,11 @@ You need Blender 5.0 or newer.
    ```
 
 4. **Install.** Search Get Extensions for **DbD** and click **Install** on each add-on you want.
+5. **Turn on update checks.** Open **Repositories** again, click this repository in the list and tick **Check for Updates on Startup**.
 
 ### Updating
 
-Blender checks this repository for new versions. When one is out, an **Update** button appears in **Preferences → Get Extensions**. You can also press **Check for Updates** there yourself. Your settings in saved .blend files stay as they are.
+With update checks on, Blender looks for new versions each time it starts. When there's one, a box with a yellow icon at the top of the add-on's sidebar panel says **Update available**, and an **Update** button appears in **Preferences → Get Extensions**. Press it, then restart Blender. You can also press **Check for Updates** in Get Extensions yourself at any time. Your settings in saved .blend files stay as they are.
 
 ---
 
@@ -66,6 +67,12 @@ To get them without exporting every mesh as JSON:
 
 Do this as well as exporting `Content/Blueprints`, not instead of it. Several core gameplay blueprints aren't named `BP_`, such as `GeneratorStandard`, `ClosetStandard` (lockers) and `WindowStandard` (vaults), so the search alone misses them.
 
+Then do the same search for **`LevelGen_`** and export those as **Properties (.json)** too. These are each realm's own data tables: which hook, pallet and lockers it uses, and its lighting. The newer realms keep theirs inside their own plugin folder, so the search is the easiest way to get them all.
+
+#### Optional: sky lighting
+
+The **Sky lighting from the game** checkbox (in **Lights**) lights the scene with the map's own sky. It needs the sky images: right-click **`Content/Textures/Lighting/HDRI`** and **`Content/Textures/Environment/Sky`** and choose **Export Folder → Textures**.
+
 #### The newer realms are in Plugins
 
 The newer realms, starting with **Liminal**, aren't under `Content` at all. Each one is a separate plugin with its own Blueprints, Meshes, Data and map layouts:
@@ -78,7 +85,7 @@ If you export only `Content`, those realms build with missing pieces or not at a
 
 ### 4. After a game update
 
-Export the same folders again, and repeat the `BP_` search. Exporting over your old files is fine.
+Export the same folders again, and repeat the `BP_` and `LevelGen_` searches. Exporting over your old files is fine.
 
 ---
 
