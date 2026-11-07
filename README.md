@@ -92,6 +92,12 @@ In **Porty's BPs**, set **Exports Folder** to FModel's Output Directory, then:
 
 Then select the objects and press **Build Materials** in **Porty's Mats**.
 
+### Exporting to FBX
+
+Select what you want to export (click a build's top empty in the Outliner to take the whole build), then open **Export** in **Porty's BPs** and press **Export Selection as FBX**.
+
+Grass, plants and other instanced meshes are built as instancers, which FBX can't hold. The export turns them into separate objects for the file, then puts your scene back exactly as it was.
+
 Each build gets its own collection, with groups such as Structures, Props, Trees and Plants, Gameplay and Lights. Untick a group in the Outliner to hide it.
 
 ---
