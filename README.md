@@ -22,10 +22,11 @@ You need Blender 5.0 or newer.
    ```
 
 4. **Install.** Search Get Extensions for **DbD** and click **Install** on each add-on you want.
+5. **Turn on update checks.** Open **Repositories** again, click this repository in the list and tick **Check for Updates on Startup**.
 
 ### Updating
 
-Blender checks this repository for new versions. When one is out, an **Update** button appears in **Preferences → Get Extensions**. You can also press **Check for Updates** there yourself. Your settings in saved .blend files stay as they are.
+With update checks on, Blender looks for new versions each time it starts. When there's one, a box with a yellow icon at the top of the add-on's sidebar panel says **Update available**, and an **Update** button appears in **Preferences → Get Extensions**. Press it, then restart Blender. You can also press **Check for Updates** in Get Extensions yourself at any time. Your settings in saved .blend files stay as they are.
 
 ---
 
