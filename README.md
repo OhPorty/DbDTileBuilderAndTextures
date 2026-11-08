@@ -71,7 +71,7 @@ Then do the same search for **`LevelGen_`** and export those as **Properties (.j
 
 #### Optional: sky lighting
 
-The **Sky lighting from the game** checkbox (in **Lights**) lights the scene with the map's own sky. It needs the sky images: right-click **`Content/Textures/Lighting/HDRI`** and **`Content/Textures/Environment/Sky`** and choose **Export Folder → Textures**.
+The **Sky lighting from the game** checkbox (in **Lights**) lights the scene with the map's own sky and moon: the realm's sky image as the World, and its moonlight as a Sun lamp called **DbD Moon**. To see the sky in the viewport, use **Rendered** shading, or tick **Scene World** in Material Preview. It needs the sky images: right-click **`Content/Textures/Lighting/HDRI`** and **`Content/Textures/Environment/Sky`** and choose **Export Folder → Textures**.
 
 #### The newer realms are in Plugins
 
