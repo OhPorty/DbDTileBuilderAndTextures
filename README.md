@@ -67,6 +67,12 @@ To get them without exporting every mesh as JSON:
 
 Do this as well as exporting `Content/Blueprints`, not instead of it. Several core gameplay blueprints aren't named `BP_`, such as `GeneratorStandard`, `ClosetStandard` (lockers) and `WindowStandard` (vaults), so the search alone misses them.
 
+Then do the same search for **`LevelGen_`** and export those as **Properties (.json)** too. These are each realm's own data tables: which hook, pallet and lockers it uses, and its lighting. The newer realms keep theirs inside their own plugin folder, so the search is the easiest way to get them all.
+
+#### Optional: sky lighting
+
+The **Sky lighting from the game** checkbox (in **Lights**) lights the scene with the map's own sky and moon: the realm's sky image as the World, and its moonlight as a Sun lamp called **DbD Moon**. To see the sky in the viewport, use **Rendered** shading, or tick **Scene World** in Material Preview. It needs the sky images: right-click **`Content/Textures/Lighting/HDRI`** and **`Content/Textures/Environment/Sky`** and choose **Export Folder → Textures**.
+
 #### The newer realms are in Plugins
 
 The newer realms, starting with **Liminal**, aren't under `Content` at all. Each one is a separate plugin with its own Blueprints, Meshes, Data and map layouts:
@@ -79,7 +85,7 @@ If you export only `Content`, those realms build with missing pieces or not at a
 
 ### 4. After a game update
 
-Export the same folders again, and repeat the `BP_` search. Exporting over your old files is fine.
+Export the same folders again, and repeat the `BP_` and `LevelGen_` searches. Exporting over your old files is fine.
 
 ---
 
