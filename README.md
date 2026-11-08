@@ -81,6 +81,7 @@ It needs these extra exports:
 | `Content/Textures/Environment/Sky` | Textures | The older realms' sky images |
 | `Content/Effects/Mesh` | Models | The moon itself |
 | `Content/Materials/Sky` | Models | The moon's materials |
+| `Content/Textures/Environment/Vegetations` | Textures | The moon's picture |
 
 #### The newer realms are in Plugins
 
