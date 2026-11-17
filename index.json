@@ -7,7 +7,7 @@
       "id": "dbd_material_maker",
       "name": "OhPorty's DbD Material Maker",
       "tagline": "Build DbD materials from FModel material exports",
-      "version": "1.0.32",
+      "version": "1.0.33",
       "type": "add-on",
       "maintainer": "OhPorty",
       "license": [
@@ -21,9 +21,9 @@
         "Material",
         "Import-Export"
       ],
-      "archive_url": "./dbd_material_maker-1.0.32.zip",
-      "archive_size": 54417,
-      "archive_hash": "sha256:606aa529f74ee75e8d1f09e1fe8d44806b9873f9175f042b1279a47ffb035677"
+      "archive_url": "./dbd_material_maker-1.0.33.zip",
+      "archive_size": 54722,
+      "archive_hash": "sha256:9db25a9352af687b3fb2c51de42490d7ee7e86eba304a8c09619b2b3deddf762"
     },
     {
       "schema_version": "1.0.0",
