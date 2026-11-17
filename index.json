@@ -30,7 +30,7 @@
       "id": "dbd_tile_builder",
       "name": "OhPorty's DbD Blueprint/Tile Builder",
       "tagline": "Rebuild DbD tiles, maps and uMaps from FModel exports",
-      "version": "1.0.30",
+      "version": "1.0.31",
       "type": "add-on",
       "maintainer": "OhPorty",
       "license": [
@@ -44,9 +44,9 @@
         "Import-Export",
         "Object"
       ],
-      "archive_url": "./dbd_tile_builder-1.0.30.zip",
-      "archive_size": 120102,
-      "archive_hash": "sha256:150a545754f62dc6f996be7f0ffdda608c9f3fd58621ce0431144bf52b2e8541"
+      "archive_url": "./dbd_tile_builder-1.0.31.zip",
+      "archive_size": 123081,
+      "archive_hash": "sha256:f5b8c423c98c28e85c1e2bd500a43c58ced84cac61d3d7095e111a65bfcf412d"
     }
   ]
 }
