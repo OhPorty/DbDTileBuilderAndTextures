@@ -1,5 +1,7 @@
 # OhPorty's DbD Blender Add-ons
 
+[![Support me on Ko-fi](https://ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/B0B8L0AA7)
+
 Two Blender 5 extensions for Dead by Daylight exports from [FModel](https://fmodel.app):
 
 - **OhPorty's DbD Blueprint/Tile Builder** rebuilds tiles, blueprints, full procedural maps and uMaps.
@@ -139,3 +141,5 @@ If it's still missing, report it with the map and seed, or the tile name, plus t
 `dbd_procgen.py` in the Tile Builder is a Python port, with changes, of the Dead by Daylight procedural map code in [CUE4Parse](https://github.com/FabianFG/CUE4Parse), used under the Apache License 2.0. See `THIRD_PARTY_NOTICES.txt` in the add-on.
 
 Both add-ons are licensed under GPL-3.0-or-later.
+
+If they've saved you time, you can support their development on [Ko-fi](https://ko-fi.com/B0B8L0AA7).
